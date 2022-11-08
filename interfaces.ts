@@ -46,4 +46,60 @@ const shoes: Product = {
 
 console.log(shoes.applyDiscount(.4));
 
+interface Dog {
+    name: string;
+    age: number;
+}
 
+interface Dog {
+    breed: string;
+    bark(): string;
+}
+
+const elton: Dog = {
+    name: "Elton",
+    age: 0.5,
+    breed: "doggie",
+    bark() {
+        return "woof WOOF!";
+    },
+};
+
+interface ServiceDog extends Dog {                    //extend interface or multiple interface
+    job: "drug sniffer" | "guide" | "bomb";
+}
+
+const chewy: ServiceDog = {
+    name: "chuck",
+    age: 5,
+    breed: "hero",
+    bark() {
+        return "greatest";
+          },
+        job: "guide"
+  }
+  interface Human {
+    name: string
+  }
+
+  interface Emplyee {
+    readonly id: number,
+    email: string,
+
+  }
+
+  interface Engineer extends Human, Emplyee {
+    level: string,
+    languages: string []
+  }
+
+  const pierre: Engineer = {
+    name: "Pierre",
+    id: 2254,
+    email: "pierre@hotmail.ca",
+    level: "beginer",
+    languages: ["js", "python"],
+
+   }  
+
+  

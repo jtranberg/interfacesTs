@@ -19,3 +19,27 @@ var shoes = {
     }
 };
 console.log(shoes.applyDiscount(.4));
+var elton = {
+    name: "Elton",
+    age: 0.5,
+    breed: "doggie",
+    bark: function () {
+        return "woof WOOF!";
+    }
+};
+var chewy = {
+    name: "chuck",
+    age: 5,
+    breed: "hero",
+    bark: function () {
+        return "greatest";
+    },
+    job: "guide"
+};
+var pierre = {
+    name: "Pierre",
+    id: 2254,
+    email: "pierre@hotmail.ca",
+    level: "beginer",
+    languages: ["js", "python"]
+};
